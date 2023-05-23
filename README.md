@@ -1,6 +1,6 @@
 # Control Gastos 📊
 
-Este proyecto es una aplicación web creada con ReactJS y tailwindCSS para el control de gastos personales. Permite definir un presupuesto y realizar un seguimiento de los gastos en diferentes categorías. También proporciona estadísticas sobre el porcentaje del presupuesto gastado y el presupuesto disponible.
+Este proyecto es una aplicación web creada con ReactJS para el control de gastos personales. Permite definir un presupuesto y realizar un seguimiento de los gastos en diferentes categorías. También proporciona estadísticas sobre el porcentaje del presupuesto gastado y el presupuesto disponible.
 
 ## Contenido
 
@@ -56,7 +56,7 @@ Si deseas contribuir a este proyecto, puedes hacerlo siguiendo estos pasos:
 
 ## Créditos
 
-Este proyecto fue desarrollado por Daniel Lozano. Utiliza ReactJS y tailwindCSS para crear una interfaz de usuario moderna y fácil de usar.
+Este proyecto fue desarrollado por Daniel Alexander Lozano y se basa en los diseños proporcionados por el profesor Juan Torre. 
 
 ## Licencia
 
