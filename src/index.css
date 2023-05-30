@@ -30,11 +30,17 @@ html {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 h2 {
     font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
 }
 
 .sombra {
@@ -55,7 +61,6 @@ header h1 {
     margin: 0;
     color: var(--blanco);
     text-align: center;
-
     text-transform: uppercase;
 }
 
@@ -107,6 +112,7 @@ header h1 {
 
 .formulario input[type="submit"] {
     background-color: #1048a4;
+    border-radius: 5px;
     border: none;
     padding: 1rem;
     text-align: center;
@@ -179,11 +185,12 @@ header h1 {
 }
 
 .dos-columnas :first-child {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 @media (min-width: 768px) {
     .dos-columnas {
+        margin-bottom: 4rem;
         flex-direction: row;
         align-items: center;
         gap: 4rem;
@@ -261,14 +268,28 @@ main {
 
 .filtros .campo {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
 
+@media (min-width: 768px) {
+    .filtros .campo {
+        flex-direction: row;
+    }
+}
+
+
 .filtros label {
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 900;
     color: var(--gris-oscuro);
+}
+
+@media (min-width: 768px) {
+    .filtros label {
+        font-size: 3rem;
+    }
 }
 
 .filtros select {
@@ -296,17 +317,25 @@ main {
 
 .gasto {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-bottom: 2rem;
     width: 100%;
+}
+
+@media(min-width: 768px) {
+    .gasto {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .cantidad-gasto {
     font-size: 2.4rem;
     color: var(--negro);
     font-weight: 900;
+    margin: 0;
 }
 
 .contenido-gasto {
@@ -370,7 +399,8 @@ main {
 
 .modal {
     position: absolute;
-    background-color: rgb(0 0 0 / 0.92);
+    background-color: rgba(0, 0, 0, 0.958);
+    padding: 0 2rem;
     top: 0;
     left: 0;
     right: 0;
@@ -383,6 +413,7 @@ main {
     top: 3rem;
     width: 3rem;
     height: 3rem;
+    z-index: 2;
 }
 
 .modal .cerrar-modal img {
@@ -391,15 +422,28 @@ main {
 
 .modal .formulario {
     max-width: 80rem;
-    width: 40rem;
     transition-property: all;
     transition-duration: 300ms;
     transition-timing-function: ease-in;
     opacity: 0;
 }
 
+@media(min-width: 768px) {
+    .modal .formulario {
+        width: 40rem;
+    }
+}
+
 .modal label {
     color: var(--blanco);
+    text-align: left;
+    font-size: 2rem;
+}
+
+@media(min-width: 768px) {
+    .modal label {
+        font-size: 2.8rem;
+    }
 }
 
 body .modal {
@@ -413,10 +457,6 @@ body .modal {
 
 .modal .formulario.cerrar {
     opacity: 0;
-}
-
-.modal label {
-    text-align: left;
 }
 
 .CircularProgressbar .CircularProgressbar-text {

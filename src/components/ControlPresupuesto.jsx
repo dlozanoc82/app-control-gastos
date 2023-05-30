@@ -28,7 +28,7 @@ const ControlPresupuesto = ({
             setPorcentaje(nuevoPorcentaje);
         }, 1000);
 
-    }, [gastos])
+    }, [gastos, presupuesto])
 
 
     const formatearCantidad = (cantidad) =>{
